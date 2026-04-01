@@ -38,4 +38,10 @@ export class LoginPage{
         await this.passwordInput.fill(incorrectPassword);
         await this.loginButton.click();
     }
+    async invalidLoginWithUserName(incorrectUsername:string,password:string)
+    {
+        await this.usernameInput.fill(incorrectUsername)
+        await this.passwordInput.fill(password);
+        await this.loginButton.click();
+    }
 }
