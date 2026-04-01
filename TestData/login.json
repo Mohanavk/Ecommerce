@@ -2,5 +2,6 @@
     "url" :"https://rahulshettyacademy.com/client",
     "email" :"komanapallimv11@gmail.com",
     "password" :"Testing@1234",
-    "incorrectPassword" : "Test"
+    "incorrectPassword" : "Test",
+    "incorrectUsername": "Komanmv@gmail.com"
 }
