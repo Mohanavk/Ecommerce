@@ -23,8 +23,14 @@ test('test the valid login functionality',async({page})=>{
 
 })
 
-test('test invalid login',async({page})=>{
+test('test invalid login with incorrect password',async({page})=>{
 
     await loginPage.invalidLogin(loginData.email,loginData.incorrectPassword);
     await expect(loginPage.errorMessage).toHaveText("Incorrect email or password.")
+})
+
+test('test login with incorrect username',async({page})=>{
+
+    await loginPage.invalidLoginWithUserName(loginData.incorrectUsername,loginData.password);
+await expect(loginPage.errorMessage).toHaveText("Incorrect email or password.")
 })
